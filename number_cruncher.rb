@@ -18,3 +18,7 @@ get '/:number' do
   number = params[:number].to_i
   { number: number, factors: number.factors, odd: number.odd?, even: number.even?, prime: number.prime? }.to_json
 end
+
+get '/' do
+  "omar test app"
+end
